@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Star Trek Enterprise Future';
+  font-family: 'Star Trek';
   src: url('fonts/Star Trek Enterprise Future.eot');
   src: local('☺'), url('fonts/Star Trek Enterprise Future.woff') format('woff'), url('fonts/Star Trek Enterprise Future.ttf') format('truetype'), url('fonts/Star Trek Enterprise Future.svg') format('svg');
   font-weight: normal;
@@ -10,14 +10,25 @@
   margin: 0;
   padding: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Star Trek Enterprise Future", "News Cycle", Impact, sans-serif;
+body {
+  font-size: 2em;
+  font-family: 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
 }
+h1 i, h2 i, h3 i {
+  font-style: normal;
+  display: block;
+}
+h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
+  font-family: "Star Trek", 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+/* page and slides */
 .page {
   position: relative;
   overflow: hidden;
 }
 .slide {
+  position: relative;
   padding-top: 1px;
   margin-top: -1px;
   text-align: center;
@@ -32,30 +43,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
 }
 .slide h1 {
-  font-size: 5.8em;
-  width: 1000px;
+  font-size: 2.8em;
+  width: 1024px;
 }
 .slide h2 {
-  font-size: 3.9em;
-  width: 800px;
+  font-size: 1.9em;
+  width: 960px;
 }
 .slide h1.invert,
 .slide h2.invert {
   background: rgba(37, 177, 177, 0.3);
   color: #F5F5F5;
 }
-.cv6 {
+.slide.cv6 {
   background-image: url(images/cv-6-1939.jpg);
 }
-.cvn65 {
+.slide.cvn65 {
   background-image: url(images/cvn-65-2012.jpg);
 }
-.ov101 {
+.slide.ov101 {
   background-image: url(images/ov-101.jpg);
 }
-.ncc1701 {
+.slide.ncc1701 {
   background-image: url(images/ncc-1701.jpg);
 }
+.middle.slides,
 .foreground.slides {
   position: absolute;
   width: 100%;
@@ -65,9 +77,43 @@ h1, h2, h3, h4, h5, h6 {
 .foreground .slide {
   padding-bottom: 112.5%;
 }
+.middle .slide {
+  padding-bottom: 225%;
+}
+/* page and slides */
+
+/* inside slide */
+.legend {
+  position: absolute;
+  text-align: left;
+}
+.legend-icon {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.legend-icon:after {
+  content: ":";
+}
+.legend.cv6 {
+  right: 100px;
+  top: 50px;
+}
+.illustration {
+  position: absolute;
+}
+.illustration.cv6 {
+  top: 50%;
+  left: 10%;
+}
+
+.middle .illustration.cv6 {
+  top: 12.5%;
+}
+/* inside slide */
 
 /*scrollTop*/
 .scrollTop {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
