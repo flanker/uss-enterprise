@@ -11,11 +11,16 @@
   padding: 0;
 }
 body {
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
 }
-h1 i, h2 i, h3 i {
+i {
   font-style: normal;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+h1 i, h2 i, h3 i {
   display: block;
 }
 h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
@@ -39,15 +44,15 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 }
 .slide h1,
 .slide h2 {
-  margin: 100px auto 0;
+  margin: 200px auto 0;
   padding: 10px;
 }
 .slide h1 {
-  font-size: 2.8em;
+  font-size: 5.6em;
   width: 1024px;
 }
 .slide h2 {
-  font-size: 1.9em;
+  font-size: 3.8em;
   width: 960px;
 }
 .slide h1.invert,
@@ -66,6 +71,9 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 }
 .slide.ncc1701 {
   background-image: url(images/ncc-1701.jpg);
+}
+.slide.end {
+  background-image: url(images/uss-enterprises.jpg);
 }
 .middle.slides,
 .foreground.slides {
@@ -86,6 +94,7 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 .legend {
   position: absolute;
   text-align: left;
+  font-size: 1.6em;
 }
 .legend-icon {
   font-weight: bold;
@@ -94,20 +103,63 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 .legend-icon:after {
   content: ":";
 }
+.illustration {
+  position: absolute;
+}
+
 .legend.cv6 {
   right: 100px;
   top: 50px;
-}
-.illustration {
-  position: absolute;
 }
 .illustration.cv6 {
   top: 50%;
   left: 10%;
 }
-
 .middle .illustration.cv6 {
   top: 12.5%;
+}
+
+.legend.cvn65 {
+  left: 100px;
+  top: 60%;
+}
+.illustration.cvn65 {
+  width: 800px;
+  height: auto;
+  top: 0;
+  right: 100px;
+}
+.foreground .legend.cvn65 {
+  top: 30%;
+}
+
+.legend.ov101 {
+  left: 100px;
+  top: 40%;
+}
+.illustration.ov101 {
+  width: auto;
+  height: 80%;
+  top: 0;
+  right: 200px;
+}
+.foreground .legend.ov101 {
+  top: 20%;
+}
+.middle .illustration.ov101 {
+  height: 20%;
+}
+.illustration.ncc1701 {
+  width: 80%;
+  left: 50px;
+  top: 20px;
+}
+.legend.ncc1701 {
+  right: 200px;
+  top: 50%;
+}
+.foreground .legend.ncc1701 {
+  top: 25%;
 }
 /* inside slide */
 
