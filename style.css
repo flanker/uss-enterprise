@@ -13,6 +13,10 @@
 body {
   font-size: 1em;
   font-family: 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  background-color: #BDC3C7;
+}
+ul, li {
+  list-style-type: none;
 }
 i {
   font-style: normal;
@@ -42,39 +46,73 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
   padding-bottom: 56.25%;
   background-size: cover;
 }
-.slide h1,
-.slide h2 {
+h1,
+h2 {
   margin: 200px auto 0;
   padding: 10px;
 }
-.slide h1 {
+h1 {
+  color: rgb(44, 62, 80);
   font-size: 5.6em;
   width: 1024px;
 }
-.slide h2 {
+h2 {
   font-size: 3.8em;
   width: 960px;
 }
-.slide h1.invert,
-.slide h2.invert {
-  background: rgba(37, 177, 177, 0.3);
-  color: #F5F5F5;
+.slide .heading {
+  color: rgb(236, 240, 241);
 }
-.slide.cv6 {
+.heading-cv6 {
+  background: rgb(26, 188, 156);
+  background: rgba(26, 188, 156, 0.9);
+}
+.heading-cvn65 {
+  background: rgb(52, 152, 219);
+  background: rgba(52, 152, 219, 0.9);
+}
+.heading-ov101 {
+  background: rgb(155, 89, 182);
+  background: rgba(155, 89, 182, 0.9);
+}
+.heading-ncc1701 {
+  background: rgb(230, 126, 34);
+  background: rgba(230, 126, 34, 0.9);
+}
+.heading-end {
+  background: rgb(46, 204, 113);
+  background: rgba(46, 204, 113, 0.9);
+}
+
+.background-cv6 {
   background-image: url(images/cv-6-1939.jpg);
 }
-.slide.cvn65 {
+.background-cvn65 {
   background-image: url(images/cvn-65-2012.jpg);
 }
-.slide.ov101 {
+.background-ov101 {
   background-image: url(images/ov-101.jpg);
 }
-.slide.ncc1701 {
+.background-ncc1701 {
   background-image: url(images/ncc-1701.jpg);
 }
-.slide.end {
+.background-end {
   background-image: url(images/uss-enterprises.jpg);
 }
+
+.background-cv6-legend {
+  background-color: rgb(241, 196, 15);
+}
+.background-cvn65-legend {
+  background-color: rgb(231, 76, 60);
+}
+.background-ov101-legend {
+  background-color: rgb(52, 152, 219);
+}
+.background-ncc1701-legend {
+  background-color: rgb(142, 68, 173);
+}
+
 .middle.slides,
 .foreground.slides {
   position: absolute;
@@ -108,6 +146,7 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 }
 
 .legend.cv6 {
+  color: rgb(44, 62, 80);
   right: 100px;
   top: 50px;
 }
@@ -120,6 +159,7 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 }
 
 .legend.cvn65 {
+  color: rgb(236, 240, 241);
   left: 100px;
   top: 60%;
 }
@@ -134,6 +174,7 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
 }
 
 .legend.ov101 {
+  color: rgb(44, 62, 80);
   left: 100px;
   top: 40%;
 }
@@ -155,6 +196,7 @@ h1 i[lang="en"], h2 i[lang="en"], h3 i[lang="en"] {
   top: 20px;
 }
 .legend.ncc1701 {
+  color: rgb(241, 196, 15);
   right: 200px;
   top: 50%;
 }
